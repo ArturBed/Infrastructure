@@ -7,8 +7,20 @@ jenkins:
   authorizationStrategy:
     globalMatrix:
       permissions:
-        - "USER:Overall/Administer:panda"
+        - "Overall/Administer:panda"
   numExecutors: 0
+  nodes: 
+    - permanent:
+        labelString: agent
+        nodeName: agent
+        remoteFS: /home/jenkins/
+        launcher:
+          ssh:
+            credentialsId: jenkins_agent
+            host: 192.168.44.44
+            port: 2222
+            sshHostKeyVerificationStrategy: nonVerifyingKeyVerificationStrategy
+
    
 credentials:
   system:
@@ -57,3 +69,4 @@ credentials:
 unclassified:
   location:
     url: "http://192.168.44.44:8880"
+
