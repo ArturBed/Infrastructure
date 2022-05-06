@@ -13,7 +13,7 @@ jenkins:
     - permanent:
         labelString: agent
         nodeName: agent
-        remoteFS: /home/jenkins/
+        remoteFS: /home/jenkins/agent
         launcher:
           ssh:
             credentialsId: jenkins_agent
