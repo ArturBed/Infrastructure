@@ -17,8 +17,8 @@ jenkins:
         launcher:
           ssh:
             credentialsId: jenkins_agent
-            host: 192.168.44.44
-            port: 2222
+            host: jenkins_agent  #192.168.44.44
+            port: 22 #2222
             sshHostKeyVerificationStrategy: nonVerifyingKeyVerificationStrategy
    
 credentials:
