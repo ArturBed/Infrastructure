@@ -85,3 +85,7 @@ tool:
           installers:
           - sonarRunnerInstaller:
               id: "4.7.0.2747"
+jobs:
+  - file: /usr/share/jenkins/ref/jobs/bacekend.groovy
+  - file: /usr/share/jenkins/ref/jobs/frontend.groovy
+  - file: /usr/share/jenkins/ref/jobs/apps_of_app.groovy
