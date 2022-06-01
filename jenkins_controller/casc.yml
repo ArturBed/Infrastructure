@@ -89,3 +89,12 @@ jobs:
   - file: /usr/share/jenkins/ref/jobs/bacekend.groovy
   - file: /usr/share/jenkins/ref/jobs/frontend.groovy
   - file: /usr/share/jenkins/ref/jobs/apps_of_app.groovy
+
+ terraform:
+    installations:
+    - name: "Terraform"
+      properties:
+      - installSource:
+          installers:
+          - terraformInstaller:
+              id: "1.2.1-linux-amd64"  
